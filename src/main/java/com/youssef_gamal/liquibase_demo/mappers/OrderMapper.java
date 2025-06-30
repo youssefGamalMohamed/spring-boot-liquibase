@@ -21,6 +21,7 @@ public interface OrderMapper {
     @Mapping(target = "payment", source = "payment")
     OrderDTO toDto(Order order);
 
+    @Mapping(target = "id", ignore = true)
     @Mapping(target = "customer.id", source = "customerId")
     @Mapping(target = "orderItems", ignore = true) // Handled manually in service or via helper
     @Mapping(target = "payment", ignore = true) // Handled manually in service or via helper

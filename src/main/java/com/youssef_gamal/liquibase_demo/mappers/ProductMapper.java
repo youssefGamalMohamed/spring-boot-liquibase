@@ -10,6 +10,8 @@ import com.youssef_gamal.liquibase_demo.entities.Product;
 @Mapper(componentModel = "spring")
 public interface ProductMapper {
     ProductDTO toDto(Product product);
+
+    @Mapping(target = "id", ignore = true)
     Product toEntity(ProductDTO productDTO);
 
     @Mapping(target = "id", ignore = true)
