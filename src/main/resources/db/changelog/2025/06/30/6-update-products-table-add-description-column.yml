@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20250630-6
+      author: YoussefGamal
+      description: Add description column to products table
+      changes:
+        - addColumn:
+            tableName: products
+            columns:
+              - column:
+                  name: description
+                  type: TEXT
+                  constraints:
+                    nullable: true

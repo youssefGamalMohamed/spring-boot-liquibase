@@ -7,3 +7,7 @@ databaseChangeLog:
       file: db/changelog/2025/06/30/3-create-order-tables.yaml
   - include:
       file: db/changelog/2025/06/30/4-create-order-items-tables.yaml
+  - include:
+      file: db/changelog/2025/06/30/5-create-payments-tables.yaml
+  - include:
+      file: db/changelog/2025/06/30/6-update-products-table-add-description-column.yml
