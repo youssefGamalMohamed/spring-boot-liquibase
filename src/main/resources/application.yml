@@ -12,7 +12,7 @@ spring:
     # JPA configuration
     jpa:
         hibernate:
-            ddl-auto: none # Liquibase handles schema
+            ddl-auto: validate # Liquibase handles schema
         show-sql: true
     
     # Liquibase configuration
