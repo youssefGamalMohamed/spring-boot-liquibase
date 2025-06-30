@@ -19,3 +19,14 @@ spring:
     liquibase:
         enabled: true
         change-log: classpath:db/changelog/db.changelog-master.yaml
+
+# Server Configs
+server:
+  port: 8080
+  servlet:
+    context-path: /ecommerce-system
+
+# Swagger Config
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html 
