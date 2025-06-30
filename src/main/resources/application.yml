@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: liquibase-demo
+
+    # Database configuration for Docker Compose PostgreSQL
+    datasource:
+        url: jdbc:postgresql://localhost:5432/mydatabase
+        username: myuser
+        password: secret
+        driver-class-name: org.postgresql.Driver
+
+    # JPA configuration
+    jpa:
+        hibernate:
+            ddl-auto: none # Liquibase handles schema
+        show-sql: true
